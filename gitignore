@@ -1,0 +1,26 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Logs
+logs/
+
+# Environment
+.env
+
+# System files
+.DS_Store
+
+# Airflow generated folders
+data/unzipped/
+*.db
+
+# Jupyter Notebook checkpoints (if applicable)
+.ipynb_checkpoints/
+
+# Ignore SQLite (if used in testing)
+airflow.db
+
+# Ignore VSCode settings
+.vscode/
