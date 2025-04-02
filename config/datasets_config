@@ -1,0 +1,23 @@
+[
+    {
+        "dag_id": "dag_a",
+        "file_name": "dataset_A.csv",
+        "columns": ["order_id", "operation_date", "operation_time"],
+        "format": "csv",
+        "wait_for_dag": null
+    },
+    {
+        "dag_id": "dag_b",
+        "file_name": "dataset_B.json",
+        "columns": ["order_id", "operation_date", "operation_time"],
+        "format": "json",
+        "wait_for_dag": "dag_a"
+    },
+    {
+        "dag_id": "dag_c",
+        "file_name": "dataset_C.xlsx",
+        "columns": ["order_id", "operation_date", "operation_time"],
+        "format": "xlsx",
+        "wait_for_dag": "dag_b"
+    }
+]

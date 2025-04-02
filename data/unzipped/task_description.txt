@@ -1,0 +1,11 @@
+In Apache Airflow, 3 separate DAGs should be created to load the datasets provided into PostgreSQL database.
+The DAGs should be configured so that they are executed sequentially at 08am on daily basis.
+It is important that each DAG starts execution only after the previous one has finished.
+Using localhost instance of PostgreSQL database is recommended.
+
+The sequence of DAGs is the following:
+- DAG for loading dataset A
+- DAG for loading dataset B
+- DAG for loading dataset C
+
+The results should be provided in a single ZIP archive. 
